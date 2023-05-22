@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: golang-eks-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: golang-eks-app
+  template:
+    metadata:
+      labels:
+        app: golang-eks-app
+    spec:
+      containers:
+        - name: golang-eks-app
+          image: docker.io/walvishal/go-aws-eks-template
+          ports:
+            - containerPort: 8080

@@ -9,7 +9,7 @@ availabilityZones:
 managedNodeGroups:
   - name: general
     privateNetworking: true
-    instanceType: t2.small
+    instanceType: t2.medium
     desiredCapacity: 1
 
 cloudWatch:

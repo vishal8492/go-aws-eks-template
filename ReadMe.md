@@ -1,8 +1,8 @@
 # Build 
 Build docker image and tag go-aws-eks-template
-```docker build . -t walvishal/go-aws-eks-template```
+```docker build . -t org_name/go-aws-eks-template```
 Push image to docker registry 
-```docker push walvishal/go-aws-eks-template```
+```docker push org_name/go-aws-eks-template```
 
 # Deployment
 https://eksctl.io/
